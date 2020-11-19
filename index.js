@@ -8,8 +8,12 @@ module.exports = postcss.plugin( 'postcss-pseudo-elements', ( options ) => {
     selectors = options.selectors || [
       'before',
       'after',
+      'cue',
+      'cue-region',
       'first-letter',
-      'first-line'
+      'first-line',
+      'file-selector-button',
+      'selection'
     ],
     notationOption = options['colon-notation'] || 'double',
     notation = notationOption === 'double' ? '::' : ':',
